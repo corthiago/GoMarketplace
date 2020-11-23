@@ -32,7 +32,9 @@ const AppRoutes: React.FC = () => (
     <App.Screen
       options={{
         headerTransparent: true,
-        headerTitle: () => <Image source={Logo} />,
+        headerTitle: () => (
+          <Image source={Logo} style={{ flex: 1, width: 110, height: 110 }} />
+        ),
         headerBackTitleVisible: false,
         headerLeftContainerStyle: {
           marginLeft: 20,
